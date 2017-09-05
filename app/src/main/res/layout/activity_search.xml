@@ -1,0 +1,46 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:zhy="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical">
+
+    <RelativeLayout
+
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+
+           <ImageView
+               android:background="@drawable/xiaoxi"
+               android:layout_width="match_parent"
+               android:layout_height="360px" />
+
+        <TextView
+            android:id="@+id/gaouda"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+        </TextView>
+        <LinearLayout
+            android:layout_below="@+id/gaouda"
+            android:layout_width="match_parent"
+            android:gravity="center_vertical"
+            android:layout_height="wrap_content">
+            <ImageView
+                android:src="@drawable/back"
+                android:layout_gravity="center"
+                android:layout_width="45px"
+                android:layout_height="45px" />
+            <TextView
+                android:layout_marginLeft="150px"
+                android:text="RelativeLayout获取控件高度"
+                android:textSize="30px"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content" />
+
+
+        </LinearLayout>
+
+    </RelativeLayout>
+</LinearLayout>

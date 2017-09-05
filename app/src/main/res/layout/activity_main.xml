@@ -1,0 +1,115 @@
+<?xml version="1.0" encoding="utf-8"?>
+<com.zhy.autolayout.AutoLinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:myradio="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+
+    android:orientation="vertical">
+
+    <!--<android.support.v7.widget.Toolbar-->
+        <!--android:id="@+id/toolbar"-->
+        <!--android:layout_width="match_parent"-->
+        <!--android:layout_height="wrap_content"-->
+        <!--android:background="@color/toobar">-->
+
+       <!--<LinearLayout-->
+           <!--android:gravity="center"-->
+           <!--android:layout_width="match_parent"-->
+           <!--android:layout_height="wrap_content">-->
+           <!--&lt;!&ndash;自定义控件&ndash;&gt;-->
+           <!--<TextView-->
+               <!--android:id="@+id/text"-->
+               <!--android:layout_gravity="center"-->
+               <!--android:layout_width="wrap_content"-->
+               <!--android:layout_height="wrap_content"-->
+               <!--android:textSize="50px"-->
+               <!--android:textColor="@color/what"-->
+               <!--android:text="Clock" />-->
+
+       <!--</LinearLayout>-->
+    <!--</android.support.v7.widget.Toolbar>-->
+    <com.zhy.autolayout.AutoFrameLayout
+        android:id="@+id/fl_content"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_weight="1" />
+    <!--RadioGroup android:background="#11000000"-->
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="2px"
+        android:background="@color/huise" />
+
+    <RadioGroup
+        android:id="@+id/rg_bottom_tag"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+
+        android:gravity="center_vertical"
+        android:orientation="horizontal"
+        android:padding="3dp">
+
+        <wen.xiao.com.simpleproject.View_z.simpleview.MyRadioButton
+            android:id="@+id/rb_common_frame"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:background="@android:color/transparent"
+            android:button="@null"
+            android:clickable="true"
+            android:drawablePadding="5dp"
+            android:gravity="center"
+            android:text="常用框架"
+            android:textColor="@color/color_radiobutton"
+            myradio:drawableSize="30dp"
+            myradio:drawableTop="@drawable/rb_common_frame_drawable_selector"
+            />
+        <wen.xiao.com.simpleproject.View_z.simpleview.MyRadioButton
+            android:id="@+id/rb_thirdparty"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:background="@android:color/transparent"
+            android:button="@null"
+            android:clickable="true"
+            android:drawablePadding="5dp"
+            android:gravity="center"
+            android:text="第三方"
+            android:textColor="@color/color_radiobutton"
+            myradio:drawableSize="30dp"
+            myradio:drawableTop="@drawable/rb_thirdparty_drawable_selector"
+            />
+        <wen.xiao.com.simpleproject.View_z.simpleview.MyRadioButton
+            android:id="@+id/rb_custom"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:background="@android:color/transparent"
+            android:button="@null"
+            android:clickable="true"
+            android:drawablePadding="5dp"
+            android:gravity="center"
+            android:text="自定义控件"
+            android:textColor="@color/color_radiobutton"
+            myradio:drawableSize="30dp"
+            myradio:drawableTop="@drawable/rb_custom_drawable_selector"
+            />
+        <wen.xiao.com.simpleproject.View_z.simpleview.MyRadioButton
+            android:id="@+id/rb_other"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:background="@android:color/transparent"
+            android:button="@null"
+            android:clickable="true"
+            android:drawablePadding="5dp"
+            android:gravity="center"
+            android:text="其他"
+            android:textColor="@color/color_radiobutton"
+            myradio:drawableSize="30dp"
+            myradio:drawableTop="@drawable/rb_other_drawable_selector"
+            />
+
+
+    </RadioGroup>
+
+</com.zhy.autolayout.AutoLinearLayout>

@@ -1,0 +1,69 @@
+<?xml version="1.0" encoding="utf-8"?>
+<com.zhy.autolayout.AutoLinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content">
+
+    <android.support.v7.widget.Toolbar
+        android:id="@+id/toolbar"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@color/zhifubao"
+        android:weightSum="1">
+
+        <com.zhy.autolayout.AutoLinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+            <!--<TextView-->
+            <!--android:layout_width="wrap_content"-->
+            <!--android:layout_height="wrap_content"-->
+            <!--android:layout_alignParentTop="true"-->
+            <!--android:text="常用框架"-->
+            <!--android:textColor="@color/colorWhite"-->
+            <!--android:layout_centerInParent="true"-->
+            <!--android:textSize="40px" />-->
+            <com.zhy.autolayout.AutoLinearLayout
+                android:layout_width="0dp"
+                android:background="@drawable/back_zhifubao"
+                android:layout_weight="1"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                android:layout_marginLeft="20px"
+                android:padding="12px">
+
+                <ImageView
+                    android:layout_width="35px"
+                    android:layout_height="35px"
+                    android:src="@drawable/sousuo" />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:paddingLeft="50px"
+                    android:layout_gravity="center"
+                    android:text="芝麻信用"
+                    android:textColor="@color/colorWhite"
+                    android:textSize="25px" />
+
+                <ImageView
+                    android:layout_marginLeft="325px"
+                    android:layout_width="35px"
+                    android:layout_height="35px"
+                    android:src="@drawable/yuyin" />
+            </com.zhy.autolayout.AutoLinearLayout>
+            <ImageView
+                android:layout_gravity="center"
+                android:src="@drawable/yonghu"
+                android:layout_marginRight="20px"
+                android:layout_marginLeft="20px"
+                android:layout_width="35px"
+                android:layout_height="35px" />
+            <ImageView
+                android:layout_gravity="center"
+                android:src="@drawable/jiahao"
+                android:layout_marginRight="20px"
+                android:layout_width="35px"
+                android:layout_height="35px" />
+        </com.zhy.autolayout.AutoLinearLayout>
+    </android.support.v7.widget.Toolbar>
+</com.zhy.autolayout.AutoLinearLayout>
